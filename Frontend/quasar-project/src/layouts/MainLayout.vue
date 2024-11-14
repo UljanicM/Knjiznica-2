@@ -24,7 +24,7 @@
     >
       <q-list>
         <q-item-label header>
-          Essential Links
+          Glavni linkovi
         </q-item-label>
 
         <!-- Zamjena q-item s router-link -->
@@ -99,7 +99,7 @@ const linksList =
   },
   {
     title: 'Registracija',
-    caption: 'Kreirajte račun',
+    caption: 'Registrirajte se',
     icon: 'person_add',
     link: '/registracija'
   }
