@@ -49,11 +49,11 @@ export default {
   setup() {
     // Dummy podaci za testiranje
     const books = ref([
-      { id: 1, title: 'Knjiga 1', author: 'Autor 1' },
-      { id: 2, title: 'Knjiga 2', author: 'Autor 2' },
-      { id: 3, title: 'Knjiga 3', author: 'Autor 3' },
-      { id: 4, title: 'Knjiga 4', author: 'Autor 4' },
-    ]);
+      { "id": 1, "title": "The Great Adventure", "author": "John Doe", "year": 2022 },
+      { "id": 2, "title": "The Secret Path", "author": "Jane Smith", "year": 2019 },
+      { "id": 3, "title": "Whispers in the Dark", "author": "Emily Johnson", "year": 2018 },
+      { "id": 4, "title": "Journey Through Time", "author": "Michael Brown", "year": 2021 }
+     ]);
 
     // Statička pretraga
     const searchQuery = ref("");

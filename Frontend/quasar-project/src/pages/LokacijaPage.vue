@@ -16,7 +16,7 @@
   
       onMounted(() => {
           // Initialize the map at the specified location and zoom level
-          initialMap.value = L.map('map').setView([45.3312, 14.4322], 13);
+          initialMap.value = L.map('map').setView([45.335320, 14.306457], 13);
   
           // Correct the tile layer URL by replacing %7B/%7D with curly braces {}
           L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -25,8 +25,8 @@
           }).addTo(initialMap.value);
   
           // Add a marker to the map
-          const marker = L.marker([45.3312, 14.4322]).addTo(initialMap.value);
-          marker.bindPopup('<b>Knjižnica Rijeka</b><br>Ovdje se nalazimo.').openPopup();
+          const marker = L.marker([45.335320, 14.306457]).addTo(initialMap.value);
+          marker.bindPopup('<b>Knjižnica Opatija</b><br>Ovdje se nalazimo.').openPopup();
         });
   
       return {
