@@ -74,6 +74,12 @@ const linksList =
     link: '/popisKnjiga'
   },
   {
+    title: 'Popis knjiga Baza',
+    caption: 'Popis svih dostupnih knjiga iz baze',
+    icon: 'book',
+    link: '/popisKnjigaBaza'
+  },
+  {
     title: 'Pretraživanje',
     caption: 'Pretražujte knjige',
     icon: 'search',
@@ -102,6 +108,12 @@ const linksList =
     caption: 'Registrirajte se',
     icon: 'person_add',
     link: '/registracija'
+  },
+  {
+    title: 'Rezervacija',
+    caption: 'Rezerviraj knjigu',
+    icon: 'person_add',
+    link: '/rezervacija'
   }
 ]
 
