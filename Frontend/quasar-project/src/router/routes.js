@@ -15,6 +15,18 @@ const routes = [
     ]
   },
   {
+    path: '/admin',
+    component: () => import('layouts/AdminLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/IndexPage.vue') }, // Početna stranica
+      { path: '/admin/popisKnjiga', component: () => import('pages/PopisKnjigaPage.vue') }, // Popis svih knjiga
+      { path: '/admin/pretrazivanje', component: () => import('pages/TraziKnjiguPage.vue') }, // Pretraživanje
+      { path: '/admin/popisKorisnika', component: () => import('pages/PopisKorisnikaPage.vue') }, // Pretraživanje
+      { path: '/admin/unosKnjiga', component: () => import('pages/UnosKnjigaPage.vue') }, // Login
+      { path: '/logout', component: () => import('pages/LogoutPage.vue') }, // Registracija
+    ]
+  },
+  {
     path: '/:catchAll(.)',
     component: () => import('pages/ErrorNotFound.vue')
   }
